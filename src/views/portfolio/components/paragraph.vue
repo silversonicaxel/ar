@@ -1,0 +1,43 @@
+<template>
+  <div class="text content">{{ text }}</div>
+</template>
+
+<script lang="ts">
+export default {
+  name: 'Paragraph',
+  props: {
+    text: {
+      type: String,
+      required: true,
+    },
+  },
+}
+</script>
+
+<style lang="scss">
+div {
+  .text {
+    padding: {
+      bottom: 2.5rem;
+      top: 2.5rem;
+    }
+
+    transform: skewY(3deg);
+    width: calc(100% - 0.6rem);
+
+    @media (min-width: 768px) and (max-width: 1024px) {
+      padding: {
+        bottom: 1.5rem;
+        top: 1.5rem;
+      }
+    }
+
+    @media (max-width: 767px) {
+      padding: {
+        bottom: 1rem;
+        top: 1rem;
+      }
+    }
+  }
+}
+</style>
