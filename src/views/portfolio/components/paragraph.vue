@@ -18,7 +18,7 @@ export default {
 div {
   .text {
     padding: {
-      bottom: 2.5rem;
+      bottom: 10rem;
       top: 2.5rem;
     }
 
@@ -27,14 +27,14 @@ div {
 
     @media (min-width: 768px) and (max-width: 1024px) {
       padding: {
-        bottom: 1.5rem;
+        bottom: 5rem;
         top: 1.5rem;
       }
     }
 
     @media (max-width: 767px) {
       padding: {
-        bottom: 1rem;
+        bottom: 3rem;
         top: 1rem;
       }
     }
