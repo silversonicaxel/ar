@@ -96,11 +96,4 @@ a {
     color: $primary-color;
   }
 }
-
-footer {
-  margin: 1rem auto;
-  font-size: 1rem;
-  text-align: center;
-  width: calc(100% - 0.6rem);
-}
 </style>
