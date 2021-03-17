@@ -52,11 +52,17 @@
 
     <Paragraph text="Interested in having a chat? writeme AT alessandrorabitti DOT com" />
 
-    <footer>
-      © copyright
-      <a href="http://alessandrorabitti.com">alessandrorabitti.com</a>
-      2021 - KVK 74007262
-    </footer>
+    <Linker text="CV" link="./media/CV-AR-EN.pdf" />
+
+    <Linker text="LinkedIn" link="https://www.linkedin.com/in/alessandrorabitti/" />
+
+    <Linker text="github" link="https://github.com/silversonicaxel" />
+
+    <Linker text="twitter" link="https://twitter.com/silversonicaxel" />
+
+    <Linker text="mail" link="mailto:writeme@alessandrorabitti.com" target="_self" />
+
+    <Footer />
   </main>
 </template>
 
@@ -64,6 +70,8 @@
 import Paragraph from './components/paragraph.vue'
 import Separator from './components/separator.vue'
 import Highlighter, { HighligtherList } from './components/highlighter.vue'
+import Linker from './components/linker.vue'
+import Footer from '../../components/footer.vue'
 
 export default {
   name: 'Portfolio',
@@ -71,6 +79,8 @@ export default {
     Paragraph,
     Separator,
     Highlighter,
+    Linker,
+    Footer,
   },
   data: (): HighligtherList => {
     return {
