@@ -98,16 +98,15 @@ export default {
       ],
       goodHighlightsList: ['Webpack', 'babel', 'Angular', 'Vue.js', 'bash'],
       agileHighlightsList: [
-        'Scrum',
         'Kanban',
-        'Scrum ceremonies',
+        'Scrum',
         'Problem solver',
         'Feedback promoter',
         'Coaching',
         'Knowledge sessions promoter',
       ],
       curiosityHighlightsList: ['Jenkins', 'Docker', 'Python', 'C#', 'Java'],
-      extraHighlightsList: ['music', 'art', 'concerts', 'boulder'],
+      extraHighlightsList: ['music', 'art', 'concerts', 'museums', 'exhibitions', 'boulder'],
     }
   },
 }
