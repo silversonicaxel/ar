@@ -48,6 +48,10 @@
 
     <Highlighter section="and" v-bind:highlightsList="extraHighlightsList" />
 
+    <Separator source="./images/6-contacts.jpg" />
+
+    <Paragraph text="Interested in having a chat? writeme AT alessandrorabitti DOT com" />
+
     <footer>
       © copyright
       <a href="http://alessandrorabitti.com">alessandrorabitti.com</a>
