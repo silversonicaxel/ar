@@ -5,7 +5,7 @@
 </template>
 
 <style lang="scss">
-$primary-color: #313942;
+$primary-color: #070e14;
 $secondary-color: #fafafa;
 
 @font-face {
@@ -57,6 +57,8 @@ main {
       bottom: 5rem;
       top: 5rem;
     }
+
+    transform: skewY(-3deg);
 
     @media (min-width: 768px) and (max-width: 1024px) {
       font-size: 6rem;
