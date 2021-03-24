@@ -5,21 +5,10 @@
 </template>
 
 <style lang="scss">
+@import './assets/styles/_fonts.scss';
+
 $primary-color: #070e14;
 $secondary-color: #fafafa;
-
-@font-face {
-  font-family: 'Share Tech';
-  src: url('../src/assets/fonts/ShareTech-Regular.eot');
-  src: url('../src/assets/fonts/ShareTech-Regular.eot?#iefix') format('embedded-opentype'),
-    url('../src/assets/fonts/ShareTech-Regular.woff2') format('woff2'),
-    url('../src/assets/fonts/ShareTech-Regular.woff') format('woff'),
-    url('../src/assets/fonts/ShareTech-Regular.ttf') format('truetype'),
-    url('../src/assets/fonts/ShareTech-Regular.svg#ShareTech-Regular') format('svg');
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
 
 body {
   background-color: $secondary-color;
