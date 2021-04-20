@@ -3,12 +3,11 @@
     "allowSyntheticDefaultImports": true,
     "baseUrl": ".",
     "esModuleInterop": true,
-    "jsx": "preserve",
     "importHelpers": true,
+    "jsx": "preserve",
     "lib": ["ESNext", "DOM", "DOM.Iterable", "ScriptHost"],
     "module": "ESNext",
     "moduleResolution": "node",
-    "noImplicitThis": true,
     "paths": {
       "@/*": ["src/*"]
     },

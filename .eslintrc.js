@@ -11,8 +11,6 @@ module.exports = {
     'plugin:@typescript-eslint/eslint-recommended',
     'plugin:@typescript-eslint/recommended',
     'plugin:prettier/recommended',
-    'prettier/vue',
-    'prettier/@typescript-eslint',
   ],
 
   // the ts-eslint recommended ruleset sets the parser so we need to set it back
