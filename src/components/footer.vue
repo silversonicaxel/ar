@@ -18,6 +18,7 @@ footer {
   margin: 1rem auto;
   font-size: 1rem;
   text-align: center;
+  transform: skewY(-3deg);
   width: calc(100% - 0.6rem);
 
   p {
