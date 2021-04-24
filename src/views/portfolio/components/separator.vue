@@ -3,6 +3,10 @@
 </template>
 
 <script lang="ts">
+interface SeparatorProps {
+  source: string
+}
+
 export default {
   name: 'Separator',
   props: {
@@ -12,8 +16,8 @@ export default {
     },
   },
   computed: {
-    style(): string {
-      return `background-image: url('${this.source}')`
+    style(props: SeparatorProps): string {
+      return `background-image: url('${props.source}')`
     },
   },
 }
