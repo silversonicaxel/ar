@@ -30,6 +30,7 @@ div {
     margin: 0 auto;
     transform: skewY(-3deg);
     width: 100%;
+    z-index: 2;
   }
 }
 </style>

@@ -111,3 +111,28 @@ export default {
   },
 }
 </script>
+
+<style lang="scss">
+$primary-color: #070e14;
+$secondary-color: #fafafa;
+
+h1 {
+  position: relative;
+
+  &::after {
+    content: '';
+    border-bottom-color: $primary-color;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    width: 50%;
+    z-index: 1;
+
+    @media (prefers-color-scheme: dark) {
+      border-bottom-color: $secondary-color;
+    }
+  }
+}
+</style>

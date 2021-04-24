@@ -1,7 +1,5 @@
 <template>
-  <div id="app">
-    <router-view />
-  </div>
+  <router-view />
 </template>
 
 <style lang="scss">
@@ -13,6 +11,7 @@ $secondary-color: #fafafa;
 body {
   background-color: $secondary-color;
   color: $primary-color;
+  cursor: crosshair;
   font-family: 'Share Tech', Arial, sans-serif;
   font-size: 6rem;
   font-style: normal;
@@ -39,6 +38,58 @@ main {
   display: flex;
   flex-direction: column;
   margin: 0 auto;
+
+  &::before,
+  &::after {
+    content: '';
+    border-color: $primary-color;
+    border-width: 0 0 0 1px;
+    border-style: solid;
+    bottom: 5rem;
+    display: block;
+    position: fixed;
+    top: 5rem;
+    z-index: 1;
+
+    @media (prefers-color-scheme: dark) {
+      border-color: $secondary-color;
+    }
+
+    @media (min-width: 768px) and (max-width: 1024px) {
+      bottom: 2.5rem;
+      top: 2.5rem;
+    }
+
+    @media (max-width: 767px) {
+      bottom: 2rem;
+      top: 2rem;
+    }
+  }
+
+  &::before {
+    right: 6rem;
+
+    @media (min-width: 768px) and (max-width: 1024px) {
+      right: 3rem;
+    }
+
+    @media (max-width: 767px) {
+      right: 2rem;
+    }
+  }
+
+  &::after {
+    opacity: 0.5;
+    right: 12rem;
+
+    @media (min-width: 768px) and (max-width: 1024px) {
+      right: 6rem;
+    }
+
+    @media (max-width: 767px) {
+      right: 4rem;
+    }
+  }
 
   h1 {
     font-size: 8rem;
