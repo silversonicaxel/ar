@@ -1,4 +1,4 @@
-# Personal Websote
+# Personal Website
 
 ## Commands
 
