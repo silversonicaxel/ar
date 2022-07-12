@@ -2,7 +2,7 @@
   <main>
     <h1 class="content">devAAA</h1>
 
-    <Paragraph text="I am Alessandro Rabitti, a Frontend Engineer based in Amsterdam." />
+    <Paragraph text="I am Alessandro Rabitti, a Frontend Engineer based in Berlin." />
 
     <Separator source="./images/1-ai.jpg" />
 
