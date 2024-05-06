@@ -1,29 +1,29 @@
-<template>
-  <div class="separator" :style="style"></div>
-</template>
-
 <script lang="ts">
 interface SeparatorProps {
   source: string
 }
 
 export default {
-  name: 'Separator',
+  name: 'SeparatorView',
   props: {
     source: {
       type: String,
-      required: true,
-    },
+      required: true
+    }
   },
   computed: {
     style(props: SeparatorProps): string {
       return `background-image: url('${props.source}')`
-    },
-  },
+    }
+  }
 }
 </script>
 
-<style lang="scss">
+<template>
+  <div class="separator" :style="style"></div>
+</template>
+
+<style scoped lang="scss">
 div {
   .separator {
     background-position: center center;

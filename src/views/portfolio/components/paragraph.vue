@@ -1,20 +1,20 @@
+<script lang="ts">
+export default {
+  name: 'ParagraphView',
+  props: {
+    text: {
+      type: String,
+      required: true
+    }
+  }
+}
+</script>
+
 <template>
   <div class="text content">{{ text }}</div>
 </template>
 
-<script lang="ts">
-export default {
-  name: 'Paragraph',
-  props: {
-    text: {
-      type: String,
-      required: true,
-    },
-  },
-}
-</script>
-
-<style lang="scss">
+<style scoped lang="scss">
 div {
   .text {
     padding: {

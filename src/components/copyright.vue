@@ -1,3 +1,9 @@
+<script lang="ts">
+export default {
+  name: 'CopyrightView'
+}
+</script>
+
 <template>
   <footer>
     <p>© copyright <a href="http://alessandrorabitti.com">alessandrorabitti.com</a> 2024</p>
@@ -6,13 +12,7 @@
   </footer>
 </template>
 
-<script lang="ts">
-export default {
-  name: 'Footer',
-}
-</script>
-
-<style lang="scss">
+<style scoped lang="scss">
 footer {
   margin: 1rem auto;
   font-size: 1rem;
