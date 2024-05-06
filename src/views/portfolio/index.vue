@@ -1,36 +1,83 @@
+<script lang="ts">
+import type { HighligtherList } from './components/highlighter.vue'
+import ParagraphView from './components/paragraph.vue'
+import SeparatorView from './components/separator.vue'
+import HighlighterView from './components/highlighter.vue'
+import LinkerView from './components/linker.vue'
+import CopyrightView from '../../components/copyright.vue'
+
+export default {
+  name: 'PortfolioView',
+  components: {
+    ParagraphView,
+    Separator: SeparatorView,
+    Highlighter: HighlighterView,
+    Linker: LinkerView,
+    CopyrightFooter: CopyrightView
+  },
+  data: (): HighligtherList => {
+    return {
+      mainHighlightsList: [
+        'Javascript',
+        'ES6',
+        'Typescript',
+        'React.js',
+        'Node.js',
+        'HTML5',
+        'CSS3',
+        'SASS',
+        'Jest',
+        'Cypress'
+      ],
+      goodHighlightsList: ['Webpack', 'babel', 'Angular', 'Vue.js', 'bash'],
+      agileHighlightsList: [
+        'Kanban',
+        'Scrum',
+        'Problem solver',
+        'Feedback promoter',
+        'Coaching',
+        'Knowledge sessions promoter'
+      ],
+      curiosityHighlightsList: ['Jenkins', 'Docker', 'Python', 'C#', 'Java'],
+      extraHighlightsList: ['music', 'art', 'concerts', 'museums', 'exhibitions', 'boulder']
+    }
+  }
+}
+</script>
+
 <template>
   <main>
     <h1 class="content">axel</h1>
 
-    <Paragraph text="I am Alessandro Rabitti, a Frontend Engineer based in Berlin." />
+    <ParagraphView text="I am Alessandro Rabitti, a Frontend Engineer based in Berlin." />
 
     <Separator source="./images/1-ai.jpg" />
 
-    <Paragraph
+    <ParagraphView
       text="I build robust applications based on modern stack and I love to check the evolution of the technologies."
     />
 
-    <Paragraph
+    <ParagraphView
       text="My focus is on writing simple, modular and functional code, from smaller to larger projects."
     />
 
-    <Paragraph
+    <ParagraphView
       text="I appreciate the logic and technical aspects of the applications I work for."
     />
 
     <Separator source="./images/2-office.jpg" />
 
-    <Paragraph
+    <ParagraphView
       text="I love to be involved in ambitious and challenging projects where I can offer solutions and creativity."
     />
 
-    <Paragraph text="I get inspired by working with amazing and open-minded colleagues." />
+    <ParagraphView text="I get inspired by working with amazing and open-minded colleagues." />
 
     <Separator source="./images/3-keyboard.jpg" />
 
-    <Paragraph text="I am a strong supporter of Agile methodologies." />
+    <ParagraphView text="I am a strong supporter of Agile methodologies." />
 
-    <Paragraph
+    <ParagraphView
       text="I feel motivated to help agile transformation in the environment I work for."
     />
 
@@ -50,7 +97,7 @@
 
     <Separator source="./images/6-contacts.jpg" />
 
-    <Paragraph text="Interested in having a chat? writeme AT alessandrorabitti DOT com" />
+    <ParagraphView text="Interested in having a chat? writeme AT alessandrorabitti DOT com" />
 
     <Linker text="CV" link="./media/CV-AR-EN.pdf" />
 
@@ -58,59 +105,13 @@
 
     <Linker text="github" link="https://github.com/silversonicaxel" />
 
-    <Linker text="x" link="https://twitter.com/silversonicaxel" />
+    <Linker text="X" link="https://twitter.com/silversonicaxel" />
 
     <Linker text="mail" link="mailto:writeme@alessandrorabitti.com" target="_self" />
 
-    <Footer />
+    <CopyrightFooter />
   </main>
 </template>
-
-<script lang="ts">
-import Paragraph from './components/paragraph.vue'
-import Separator from './components/separator.vue'
-import Highlighter, { HighligtherList } from './components/highlighter.vue'
-import Linker from './components/linker.vue'
-import Footer from '../../components/footer.vue'
-
-export default {
-  name: 'Portfolio',
-  components: {
-    Paragraph,
-    Separator,
-    Highlighter,
-    Linker,
-    Footer,
-  },
-  data: (): HighligtherList => {
-    return {
-      mainHighlightsList: [
-        'Javascript',
-        'ES6',
-        'Typescript',
-        'React.js',
-        'Node.js',
-        'HTML5',
-        'CSS3',
-        'SASS',
-        'Jest',
-        'Cypress',
-      ],
-      goodHighlightsList: ['Webpack', 'babel', 'Angular', 'Vue.js', 'bash'],
-      agileHighlightsList: [
-        'Kanban',
-        'Scrum',
-        'Problem solver',
-        'Feedback promoter',
-        'Coaching',
-        'Knowledge sessions promoter',
-      ],
-      curiosityHighlightsList: ['Jenkins', 'Docker', 'Python', 'C#', 'Java'],
-      extraHighlightsList: ['music', 'art', 'concerts', 'museums', 'exhibitions', 'boulder'],
-    }
-  },
-}
-</script>
 
 <style lang="scss">
 $primary-color: #070e14;

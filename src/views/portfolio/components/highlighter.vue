@@ -1,3 +1,23 @@
+<script lang="ts">
+export interface HighligtherList {
+  [key: string]: string[]
+}
+
+export default {
+  name: 'HighlighterView',
+  props: {
+    section: {
+      type: String,
+      required: true
+    },
+    highlightsList: {
+      type: Array,
+      required: true
+    }
+  }
+}
+</script>
+
 <template>
   <div class="text content">
     <h2>&#123;{{ section }}&#125;</h2>
@@ -5,27 +25,7 @@
   </div>
 </template>
 
-<script lang="ts">
-export interface HighligtherList {
-  [key: string]: string[]
-}
-
-export default {
-  name: 'Highlighter',
-  props: {
-    section: {
-      type: String,
-      required: true,
-    },
-    highlightsList: {
-      type: Array,
-      required: true,
-    },
-  },
-}
-</script>
-
-<style lang="scss">
+<style scoped lang="scss">
 $primary-color: #313942;
 $secondary-color: #fafafa;
 
