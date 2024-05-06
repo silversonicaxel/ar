@@ -39,7 +39,7 @@ export default {
         'Knowledge sessions promoter'
       ],
       curiosityHighlightsList: ['Jenkins', 'Docker', 'Python', 'C#', 'Java'],
-      extraHighlightsList: ['music', 'art', 'concerts', 'museums', 'exhibitions', 'boulder']
+      extraHighlightsList: ['music', 'art', 'concerts', 'museums', 'exhibitions']
     }
   }
 }
@@ -49,7 +49,7 @@ export default {
   <main>
     <h1 class="content">axel</h1>
 
-    <ParagraphView text="I am Alessandro Rabitti, a Frontend Engineer based in Berlin." />
+    <ParagraphView text="I am Alessandro Rabitti, or axel, a Frontend Engineer based in Berlin." />
 
     <Separator source="./images/1-ai.jpg" />
 
