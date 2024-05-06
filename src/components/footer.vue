@@ -1,7 +1,6 @@
 <template>
   <footer>
-    <p>© copyright <a href="http://alessandrorabitti.com">alessandrorabitti.com</a> 2021</p>
-    <p>KVK 74007262</p>
+    <p>© copyright <a href="http://alessandrorabitti.com">alessandrorabitti.com</a> 2024</p>
     <br />
     <p>~~ thanks Alba &amp; Alfredo ~~</p>
   </footer>

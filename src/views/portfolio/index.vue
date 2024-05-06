@@ -1,6 +1,6 @@
 <template>
   <main>
-    <h1 class="content">devAAA</h1>
+    <h1 class="content">axel</h1>
 
     <Paragraph text="I am Alessandro Rabitti, a Frontend Engineer based in Berlin." />
 
@@ -58,7 +58,7 @@
 
     <Linker text="github" link="https://github.com/silversonicaxel" />
 
-    <Linker text="twitter" link="https://twitter.com/silversonicaxel" />
+    <Linker text="x" link="https://twitter.com/silversonicaxel" />
 
     <Linker text="mail" link="mailto:writeme@alessandrorabitti.com" target="_self" />
 
