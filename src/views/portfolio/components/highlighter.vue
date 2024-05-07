@@ -41,6 +41,7 @@ span {
     transform: translate3d(0, 0, 0);
     backface-visibility: hidden;
     perspective: 1000px;
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
@@ -53,6 +54,7 @@ span {
   span {
     &:hover {
       background: -webkit-linear-gradient($background-color-lighter, $background-color-darker);
+      background-clip: text;
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
     }

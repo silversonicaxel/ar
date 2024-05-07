@@ -10,10 +10,10 @@ export default {
   name: 'PortfolioView',
   components: {
     ParagraphView,
-    Separator: SeparatorView,
-    Highlighter: HighlighterView,
-    Linker: LinkerView,
-    CopyrightFooter: CopyrightView
+    SeparatorView,
+    HighlighterView,
+    LinkerView,
+    CopyrightView
   },
   data: (): HighligtherList => {
     return {
@@ -65,7 +65,7 @@ export default {
       text="I appreciate the logic and technical aspects of the applications I work for."
     />
 
-    <Separator source="./images/2-office.jpg" />
+    <SeparatorView source="./images/2-office.jpg" />
 
     <ParagraphView
       text="I love to be involved in ambitious and challenging projects where I can offer solutions and creativity."
@@ -73,7 +73,7 @@ export default {
 
     <ParagraphView text="I get inspired by working with amazing and open-minded colleagues." />
 
-    <Separator source="./images/3-keyboard.jpg" />
+    <SeparatorView source="./images/3-keyboard.jpg" />
 
     <ParagraphView text="I am a strong supporter of Agile methodologies." />
 
@@ -81,35 +81,35 @@ export default {
       text="I feel motivated to help agile transformation in the environment I work for."
     />
 
-    <Separator source="./images/4-code.jpg" />
+    <SeparatorView source="./images/4-code.jpg" />
 
-    <Highlighter section="main" v-bind:highlightsList="mainHighlightsList" />
+    <HighlighterView section="main" v-bind:highlightsList="mainHighlightsList" />
 
-    <Highlighter section="good" v-bind:highlightsList="goodHighlightsList" />
+    <HighlighterView section="good" v-bind:highlightsList="goodHighlightsList" />
 
-    <Highlighter section="agile" v-bind:highlightsList="agileHighlightsList" />
+    <HighlighterView section="agile" v-bind:highlightsList="agileHighlightsList" />
 
-    <Highlighter section="curious" v-bind:highlightsList="curiosityHighlightsList" />
+    <HighlighterView section="curious" v-bind:highlightsList="curiosityHighlightsList" />
 
-    <Separator source="./images/5-statue.jpg" />
+    <SeparatorView source="./images/5-statue.jpg" />
 
-    <Highlighter section="and" v-bind:highlightsList="extraHighlightsList" />
+    <HighlighterView section="and" v-bind:highlightsList="extraHighlightsList" />
 
-    <Separator source="./images/6-contacts.jpg" />
+    <SeparatorView source="./images/6-contacts.jpg" />
 
     <ParagraphView text="Interested in having a chat? writeme AT alessandrorabitti DOT com" />
 
-    <Linker text="CV" link="./media/CV-AR-EN.pdf" />
+    <LinkerView text="CV" link="./media/CV-AR-EN.pdf" />
 
-    <Linker text="LinkedIn" link="https://www.linkedin.com/in/alessandrorabitti/" />
+    <LinkerView text="LinkedIn" link="https://www.linkedin.com/in/alessandrorabitti/" />
 
-    <Linker text="github" link="https://github.com/silversonicaxel" />
+    <LinkerView text="github" link="https://github.com/silversonicaxel" />
 
-    <Linker text="X" link="https://twitter.com/silversonicaxel" />
+    <LinkerView text="X" link="https://twitter.com/silversonicaxel" />
 
-    <Linker text="mail" link="mailto:writeme@alessandrorabitti.com" target="_self" />
+    <LinkerView text="mail" link="mailto:writeme@alessandrorabitti.com" target="_self" />
 
-    <CopyrightFooter />
+    <CopyrightView />
   </main>
 </template>
 
@@ -133,6 +133,32 @@ h1 {
 
     @media (prefers-color-scheme: dark) {
       border-bottom-color: $secondary-color;
+    }
+  }
+}
+
+div {
+  .text {
+    padding: {
+      bottom: 10rem;
+      top: 2.5rem;
+    }
+
+    transform: skewY(3deg);
+    width: calc(100% - 0.6rem);
+
+    @media (min-width: 768px) and (max-width: 1024px) {
+      padding: {
+        bottom: 5rem;
+        top: 1.5rem;
+      }
+    }
+
+    @media (max-width: 767px) {
+      padding: {
+        bottom: 3rem;
+        top: 1rem;
+      }
     }
   }
 }
