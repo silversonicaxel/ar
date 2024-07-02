@@ -27,9 +27,18 @@ export default {
         'CSS3',
         'SASS',
         'Jest',
+        'Vitest',
         'Cypress'
       ],
-      goodHighlightsList: ['Webpack', 'babel', 'Angular', 'Vue.js', 'bash'],
+      goodHighlightsList: [
+        'Next.js',
+        'Webpack',
+        'babel',
+        'Angular',
+        'Vue.js',
+        'Playwright',
+        'bash'
+      ],
       agileHighlightsList: [
         'Kanban',
         'Scrum',
@@ -38,8 +47,8 @@ export default {
         'Coaching',
         'Knowledge sessions promoter'
       ],
-      curiosityHighlightsList: ['Jenkins', 'Docker', 'Python', 'C#', 'Java'],
-      extraHighlightsList: ['music', 'art', 'concerts', 'museums', 'exhibitions']
+      curiosityHighlightsList: ['Jenkins', 'Docker', 'Python', 'C#', 'Java', 'AI'],
+      extraHighlightsList: ['music', 'art', 'concerts', 'museums', 'exhibitions', 'formula1']
     }
   }
 }
