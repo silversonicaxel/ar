@@ -1,15 +1,9 @@
 <script lang="ts">
 export default {
-  name: 'ParagraphView',
-  props: {
-    text: {
-      type: String,
-      required: true
-    }
-  }
+  name: 'ParagraphView'
 }
 </script>
 
 <template>
-  <div class="text content">{{ text }}</div>
+  <div class="text content"><slot /></div>
 </template>

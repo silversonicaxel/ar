@@ -48,7 +48,16 @@ export default {
         'Knowledge sessions promoter'
       ],
       curiosityHighlightsList: ['Jenkins', 'Docker', 'Python', 'C#', 'Java', 'AI'],
-      extraHighlightsList: ['music', 'art', 'concerts', 'museums', 'exhibitions', 'formula1']
+      extraHighlightsList: [
+        'music',
+        'art',
+        'concerts',
+        'museums',
+        'exhibitions',
+        'formula1',
+        'psychology',
+        'health'
+      ]
     }
   }
 }
@@ -58,37 +67,45 @@ export default {
   <main>
     <h1 class="content">axel</h1>
 
-    <ParagraphView text="I am Alessandro Rabitti, or axel, a Frontend Engineer based in Berlin." />
+    <ParagraphView>
+      I am Alessandro Rabitti, a Frontend Engineer based in
+      <strike>Reggio Emilia</strike> <strike>Amsterdam</strike> Berlin.
+    </ParagraphView>
 
     <Separator source="./images/1-ai.jpg" />
 
-    <ParagraphView
-      text="I build robust applications based on modern stack and I love to check the evolution of the technologies."
-    />
+    <ParagraphView>
+      I build robust applications based on modern stack and I love to check the evolution of the
+      technologies.
+    </ParagraphView>
 
-    <ParagraphView
-      text="My focus is on writing simple, modular and functional code, from smaller to larger projects."
-    />
+    <ParagraphView>
+      My focus is on writing simple, modular and functional <code>code</code>, from smaller to
+      larger projects.
+    </ParagraphView>
 
-    <ParagraphView
-      text="I appreciate the logic and technical aspects of the applications I work for."
-    />
+    <ParagraphView>
+      I appreciate the logic and technical aspects of the applications I work for.
+    </ParagraphView>
 
     <SeparatorView source="./images/2-office.jpg" />
 
-    <ParagraphView
-      text="I love to be involved in ambitious and challenging projects where I can offer solutions and creativity."
-    />
+    <ParagraphView>
+      I love to be involved in ambitious and challenging projects where I can offer solutions and
+      creativity.
+    </ParagraphView>
 
-    <ParagraphView text="I get inspired by working with amazing and open-minded colleagues." />
+    <ParagraphView>
+      I get inspired by working with amazing and open-minded colleagues.
+    </ParagraphView>
 
     <SeparatorView source="./images/3-keyboard.jpg" />
 
-    <ParagraphView text="I am a strong supporter of Agile methodologies." />
+    <ParagraphView> I am a strong supporter of Agile methodologies. </ParagraphView>
 
-    <ParagraphView
-      text="I feel motivated to help agile transformation in the environment I work for."
-    />
+    <ParagraphView>
+      I feel motivated to help Agile transformation in the environment I work for.
+    </ParagraphView>
 
     <SeparatorView source="./images/4-code.jpg" />
 
@@ -106,7 +123,9 @@ export default {
 
     <SeparatorView source="./images/6-contacts.jpg" />
 
-    <ParagraphView text="Interested in having a chat? writeme AT alessandrorabitti DOT com" />
+    <ParagraphView>
+      Interested in having a chat? writeme AT alessandrorabitti DOT com.
+    </ParagraphView>
 
     <LinkerView text="CV" link="./media/CV-AR-EN.pdf" />
 
