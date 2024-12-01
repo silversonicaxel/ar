@@ -68,7 +68,7 @@ export default {
     <h1 class="content">axel</h1>
 
     <ParagraphView>
-      I am Alessandro Rabitti, a Frontend Engineer based in
+      I am Alessandro Rabitti, an Italian Frontend Engineer based in
       <strike>Reggio Emilia</strike> <strike>Amsterdam</strike> Berlin.
     </ParagraphView>
 
