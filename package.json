@@ -14,6 +14,7 @@
     "format": "prettier --write src/"
   },
   "dependencies": {
+    "ua-parser-js": "^2.0.0",
     "vue": "^3.4.21",
     "vue-router": "^4.3.0"
   },

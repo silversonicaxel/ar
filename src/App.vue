@@ -1,16 +1,24 @@
+<script lang="ts">
+import GradientView from './components/gradient.vue'
+
+export default {
+  name: 'AppView',
+  components: {
+    GradientView
+  }
+}
+</script>
+
 <template>
-  <router-view />
+  <GradientView>
+    <router-view />
+  </GradientView>
 </template>
 
 <style lang="scss">
-@import './assets/styles/_fonts.scss';
-
-$primary-color: #070e14;
-$secondary-color: #fafafa;
-
 body {
-  background-color: $secondary-color;
-  color: $primary-color;
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
   cursor: crosshair;
   font-family: 'Share Tech', Arial, sans-serif;
   font-size: 6rem;
@@ -20,8 +28,8 @@ body {
   padding: 0;
 
   @media (prefers-color-scheme: dark) {
-    background-color: $primary-color;
-    color: $secondary-color;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
   }
 
   @media (min-width: 768px) and (max-width: 1024px) {
@@ -42,7 +50,7 @@ main {
   &::before,
   &::after {
     content: '';
-    border-color: $primary-color;
+    border-color: var(--primary-color);
     border-width: 0 0 0 1px;
     border-style: solid;
     display: block;
@@ -50,7 +58,7 @@ main {
     z-index: 1;
 
     @media (prefers-color-scheme: dark) {
-      border-color: $secondary-color;
+      border-color: var(--secondary-color);
     }
   }
 
@@ -130,12 +138,12 @@ main {
 }
 
 a {
-  background-color: $primary-color;
-  color: $secondary-color;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
 
   @media (prefers-color-scheme: dark) {
-    background-color: $secondary-color;
-    color: $primary-color;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
   }
 }
 </style>

@@ -142,15 +142,12 @@ export default {
 </template>
 
 <style lang="scss">
-$primary-color: #070e14;
-$secondary-color: #fafafa;
-
 h1 {
   position: relative;
 
   &::after {
     content: '';
-    border-bottom-color: $primary-color;
+    border-bottom-color: var(--primary-color);
     border-bottom-style: solid;
     border-bottom-width: 1px;
     position: absolute;
@@ -160,7 +157,7 @@ h1 {
     z-index: 1;
 
     @media (prefers-color-scheme: dark) {
-      border-bottom-color: $secondary-color;
+      border-bottom-color: var(--secondary-color);
     }
   }
 }
