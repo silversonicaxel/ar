@@ -1,32 +1,38 @@
 <script lang="ts">
-import { ref, onMounted, onUnmounted, computed } from 'vue'
+import { computed, ref, onMounted, onUnmounted } from 'vue'
 import { isMobile } from '../utils/device'
 
 export default {
   name: 'GradientView',
   setup() {
-    const mousePosition = ref({ x: window.innerWidth / 2, y: window.innerHeight / 2 }) // Start at center of screen
+    const cursorPositionRef = ref({
+      x: window.innerWidth / 2,
+      y: window.innerHeight / 2
+    })
 
-    const updateMousePosition = (event: MouseEvent) => {
+    const updateCursorPosition = (event: MouseEvent) => {
       if (!isMobile()) {
-        mousePosition.value = { x: event.clientX, y: event.clientY }
+        cursorPositionRef.value = {
+          x: event.clientX,
+          y: event.clientY
+        }
       }
     }
 
     onMounted(() => {
       if (!isMobile()) {
-        window.addEventListener('mousemove', updateMousePosition)
+        window.addEventListener('mousemove', updateCursorPosition)
       }
     })
 
     onUnmounted(() => {
       if (!isMobile()) {
-        window.removeEventListener('mousemove', updateMousePosition)
+        window.removeEventListener('mousemove', updateCursorPosition)
       }
     })
 
     const gradientPosition = computed(() => {
-      return `${mousePosition.value.x}px ${mousePosition.value.y}px`
+      return `${cursorPositionRef.value.x}px ${cursorPositionRef.value.y}px`
     })
 
     return {
