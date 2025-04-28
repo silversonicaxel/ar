@@ -133,8 +133,6 @@ export default {
 
     <LinkerView text="github" link="https://github.com/silversonicaxel" />
 
-    <LinkerView text="X" link="https://twitter.com/silversonicaxel" />
-
     <LinkerView text="mail" link="mailto:writeme@alessandrorabitti.com" target="_self" />
 
     <CopyrightView />
